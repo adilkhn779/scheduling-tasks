@@ -14,7 +14,7 @@ public class ScheduledTask {
 	@Autowired
 	RestClient restClient;
 	
-	@Scheduled(initialDelayString ="${schedule.dataconsume.initialDelay}",fixedDelayString="${schedule.dataconsume.fixedDelay}")
+	@Scheduled(initialDelayString ="0",fixedDelayString="180000")
 	public void apiScheduledTask() {
 		restClient.saveUserDetails();
 		

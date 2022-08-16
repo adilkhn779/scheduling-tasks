@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://demoazurepostgresql.postgres.database.azure.com:5432/User
+    username: postgresqladmin@demoazurepostgresql
+    password: Ammu@1234$
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.PostgreSQL81Dialect
+      default_schema: user_test
+      
+
+server:
+  port: 9191
